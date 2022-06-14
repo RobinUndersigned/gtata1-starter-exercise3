@@ -60,4 +60,38 @@ namespace Exercise3.Assets.Scripts
             -u * Sin(v)
         );
     }
+
+    public class Doughnut : MeshFunction
+    {
+        public Vector2 UMinMax => new Vector2(-1 * PI, 1 * PI);
+        public Vector2 VMinMax => new Vector2(-1 * PI, 1 * PI);
+        public Vector2Int Subdivisions => new Vector2Int(150, 25);
+
+        public Vector3 Vertex(float u, float v) => new Vector3(
+            (2 + Cos(v)) * Cos(u),
+            (2 + Cos(v)) * Sin(u),
+            Sin(v)
+        );
+    }
+    
+    public class Poop : MeshFunction
+    {
+        public Vector2 UMinMax => new Vector2(-1 * PI, 5 * PI);
+        public Vector2 VMinMax => new Vector2(-1 * PI, 5 * PI);
+        public Vector2Int Subdivisions => new Vector2Int(50, 5);
+        
+        private float r = 1.5f;
+        
+        // public Vector3 Vertex(float u, float v) => new Vector3(
+        //     5/4 * (1 - v/(2*PI)) * Cos(2 * v) * (1 + Cos(u)) + Cos(2 * v),
+        //     5/4 * (1 - v/(2*PI)) * Sin(2 * v) * (1 + Cos(u)) + Sin(2 * v),
+        //     10 * v / 2 * PI + 5/4 * (1 - v/(2*PI)) * Sin(u) + 15
+        // );
+
+        public Vector3 Vertex(float u, float v) => new Vector3(
+            Sin(v) + 2 * Sin(2 * u),
+            (2 + Cos(v)) * Sin(u),
+            Sin(v) - (u/2)
+        );
+    }
 }

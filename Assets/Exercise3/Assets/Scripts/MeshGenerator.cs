@@ -19,7 +19,10 @@ public enum MeshType
     Snail,
     Cone,
     SeaShell,
-    KleinBottle
+    KleinBottle,
+    
+    Doughnut,
+    Poop
 }
 
 
@@ -96,6 +99,8 @@ public class MeshGenerator : MonoBehaviour
         MeshType.Cone => new ConeSurface(),
         MeshType.SeaShell => new SeaShellSurface(),
         MeshType.KleinBottle => new KleinBottle(),
+        MeshType.Doughnut => new Doughnut(),
+        MeshType.Poop => new Poop(),
         _ => throw new ArgumentOutOfRangeException(nameof(meshType))
     };
     
