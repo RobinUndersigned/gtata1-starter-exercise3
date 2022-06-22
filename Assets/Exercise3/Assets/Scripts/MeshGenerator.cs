@@ -21,8 +21,9 @@ public enum MeshType
     SeaShell,
     KleinBottle,
     
-    Doughnut,
-    Poop
+    Torus,
+    ConeShell,
+    Hourglass
 }
 
 
@@ -99,8 +100,9 @@ public class MeshGenerator : MonoBehaviour
         MeshType.Cone => new ConeSurface(),
         MeshType.SeaShell => new SeaShellSurface(),
         MeshType.KleinBottle => new KleinBottle(),
-        MeshType.Doughnut => new Doughnut(),
-        MeshType.Poop => new Poop(),
+        MeshType.Torus => new TorusSurface(),
+        MeshType.ConeShell => new ConeShellSurface(),
+        MeshType.Hourglass => new HourglassSurface(),
         _ => throw new ArgumentOutOfRangeException(nameof(meshType))
     };
     
