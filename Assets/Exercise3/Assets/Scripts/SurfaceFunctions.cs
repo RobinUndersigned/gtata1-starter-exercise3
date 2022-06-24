@@ -4,20 +4,22 @@ using static UnityEngine.Mathf;
 
 namespace Exercise3.Assets.Scripts
 {
+    // Robin
     public class KleinBottle : MeshFunction
     {
-        public Vector2 UMinMax => new Vector2(0, 2 * PI);
-        public Vector2 VMinMax => new Vector2(0 , 2 * PI);
+        public Vector2 UMinMax => new Vector2(0, 2*PI);
+        public Vector2 VMinMax => new Vector2(0 , 2*PI);
         public Vector2Int Subdivisions => new Vector2Int(150, 25);
 
 
         public Vector3 Vertex(float u, float v) => new Vector3(
-            -(2/15)*Cos(u)*(3*Cos(v)-30*Sin(u)+90*Pow(Cos(u), 4)*Sin(u)-60*Pow(Cos(u), 6)*Sin(u)+5*Cos(u)*Cos(v)*Sin(u)),
-            -(1/15)*Sin(u)*(3*Cos(v)-3*Pow(Cos(u), 2)*Cos(v)-48*Pow(Cos(u), 4)*Cos(v)+48*Pow(Cos(u), 6)*Cos(v)-60*Sin(u)+5*Cos(u)*Cos(v)*Sin(u)-5*Pow(Cos(u), 3)*Cos(v)*Sin(u) -80*Pow(Cos(u), 5)*Cos(v)*Sin(u)+80*Pow(Cos(u), 7)*Cos(v)*Sin(u)),
-            (2/15)*(3+5*Cos(u)*Sin(u))*Sin(v)
+            Cos(u)*(Cos(u/2)*(Sqrt(2)+Cos(v))+Sin(u/2)*Sin(v)*Cos(v)),
+            Sin(u)*(Cos(u/2)*(Sqrt(2)+Cos(v))+Sin(u/2)*Sin(v)*Cos(v)),
+            -Sin(u/2)*(Sqrt(2)+Cos(v))+Cos(u/2)*Sin(v)*Cos(v)
         );
     }
     
+    // Robin
     public class SeaShellSurface : MeshFunction
     {
         public Vector2 UMinMax => new Vector2(0, 6 * PI);
@@ -35,6 +37,8 @@ namespace Exercise3.Assets.Scripts
             1-Exp(u/(3*PI)) - Sin(v)  +Exp(u/(6*PI)) * Sin(v)
         );
     }
+    
+    // Robin
     public class ConeSurface : MeshFunction
     {
         public Vector2 UMinMax => new Vector2(-1, 2 * PI);
@@ -74,6 +78,7 @@ namespace Exercise3.Assets.Scripts
         );
     }
     
+    // Oksi
     public class ConeShellSurface : MeshFunction
     {
         public Vector2 UMinMax => new Vector2(-1 * PI, 1 * PI);
@@ -87,6 +92,7 @@ namespace Exercise3.Assets.Scripts
         );
     }
     
+    // Oksi
     public class HourglassSurface : MeshFunction
     {
         public Vector2 UMinMax => new Vector2(-1 * PI, 1 * PI);
