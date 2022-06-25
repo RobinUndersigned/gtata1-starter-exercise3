@@ -12,15 +12,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01270efd3285ea4a9d6c555cb0a8027, type: 3}
   m_Name: VFXUI
   m_EditorClassIdentifier: 
-  groupInfos: []
+  groupInfos:
+  - title: Lightning
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 100
+      height: 100
+    contents:
+    - model: {fileID: 8926484042661614555}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614556}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614558}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614707}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614569}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614580}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614583}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614789}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614596}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614655}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614658}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614669}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614706}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614673}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614695}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614699}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614701}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614759}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614764}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614717}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614726}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614731}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614751}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614753}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614755}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614766}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614772}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614795}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614800}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661614806}
+      id: 0
+      isStickyNote: 0
   stickyNoteInfos: []
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 776
-    y: -628
-    width: 2098
-    height: 1874
+    x: 751
+    y: -1245
+    width: 4313
+    height: 2516
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
