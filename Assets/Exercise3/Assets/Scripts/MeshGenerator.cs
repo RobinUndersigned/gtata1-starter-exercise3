@@ -23,7 +23,11 @@ public enum MeshType
     
     Torus,
     ConeShell,
-    Hourglass
+    Hourglass,
+    
+    SphereSurface,
+    PillowSurface,
+    UfoSurface
 }
 
 
@@ -103,6 +107,9 @@ public class MeshGenerator : MonoBehaviour
         MeshType.Torus => new TorusSurface(),
         MeshType.ConeShell => new ConeShellSurface(),
         MeshType.Hourglass => new HourglassSurface(),
+        MeshType.SphereSurface => new SphereSurface(),
+        MeshType.PillowSurface => new PillowSurface(),
+        MeshType.UfoSurface => new UfoSurface(),
         _ => throw new ArgumentOutOfRangeException(nameof(meshType))
     };
     
