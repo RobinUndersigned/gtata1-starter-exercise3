@@ -92,7 +92,7 @@ Material:
     - SpherizeStrength: {r: 0, g: 0, b: 0, a: 0}
     - TwirlCenter: {r: 0.5, g: 0.3, b: 0, a: 0}
     - TwirlSpeed: {r: 0, g: 0.5, b: 0, a: 0}
-    - _Color: {r: 0.5325721, g: 2.94963, b: 2.9769413, a: 1}
+    - _Color: {r: 0.03137255, g: 5.0509806, b: 5.082353, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
