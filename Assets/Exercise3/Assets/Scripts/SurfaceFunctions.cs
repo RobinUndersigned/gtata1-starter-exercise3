@@ -25,12 +25,6 @@ namespace Exercise3.Assets.Scripts
         public Vector2 UMinMax => new Vector2(0, 6 * PI);
         public Vector2 VMinMax => new Vector2(0 , 6 * PI);
         public Vector2Int Subdivisions => new Vector2Int(150, 25);
-
-        /**
-         * x = 2*(1-exp(u/(6*pi))).*cos(u).*cos(v/2).^2;
-         * y = 2*(-1+exp(u/(6*pi))).*sin(u).*cos(v/2).^2;
-         * z = 1-exp(u/(3*pi))-sin(v)+exp(u/(6*pi)).*sin(v);
-         */
         public Vector3 Vertex(float u, float v) => new Vector3(
             2*(1-Exp(u/(6*PI)))*Cos(u)*Pow(Cos(v/2), 2),
             2*(-1+Exp(u/(6*PI)))*Sin(u)*Pow(Cos(v/2), 2),
